@@ -1,0 +1,37 @@
+{
+  "name": "genpark-continual-fewshot-exemplar-distiller-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Continual few-shot exemplar distiller mining high-scoring execution trajectories into in-context prompt demonstrations.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "continual-learning",
+  "tags": [
+    "fewshot-distiller",
+    "continual-learning",
+    "trajectory-mining",
+    "in-context-learning",
+    "agent-optimization"
+  ],
+  "inputs": {
+    "task_domain": {
+      "type": "string",
+      "default": "cloud_iac_deployment"
+    }
+  },
+  "outputs": {
+    "distillation_id": {
+      "type": "string"
+    },
+    "exemplars_selected_for_prompt": {
+      "type": "integer"
+    },
+    "continual_learning_gain_score": {
+      "type": "number"
+    },
+    "curation_status": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
